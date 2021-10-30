@@ -1,0 +1,69 @@
+# input file for disc setup routine
+
+# resolution
+                  np =      100000    ! number of gas particles
+
+# units
+           dist_unit =          au    ! distance unit (e.g. au,pc,kpc,0.1pc)
+           mass_unit =      solarm    ! mass unit (e.g. solarm,jupiterm,earthm)
+
+# central object(s)/potential
+            icentral =           1    ! use sink particles or external potential (0=potential,1=sinks)
+              nsinks =           4    ! number of sinks
+
+# options for hierarchical quadruple
+                  m1 =       1.100    ! first hierarchical level primary mass
+                  m2 =       1.400    ! first hierarchical level secondary mass
+                  q1 =       0.311    ! tight binary 1 mass ratio
+                  q2 =       0.805    ! tight binary 2 mass ratio
+              subst1 =          11    ! first star to substitute
+              subst2 =          12    ! second star to substitute
+            binary_a =         51.    ! wide binary semi-major axis
+            binary_e =       0.460    ! wide binary eccentricity
+            binary_i =        88.1    ! wide binary i, inclination (deg)
+            binary_O =       184.5    ! wide binary Omega, PA of ascending node (deg)
+            binary_w =         65.    ! wide binary w, argument of periapsis (deg)
+            binary_f =       0.000    ! wide binary f, initial true anomaly (deg,180=apastron)
+           binary1_a =       0.860    ! tight binary 1 semi-major axis
+           binary1_e =      0.4808    ! tight binary 1 eccentricity
+           binary1_i =       135.6    ! tight binary 1 i, inclination (deg)
+           binary1_O =       170.2    ! tight binary 1 Omega, PA of ascending node (deg)
+           binary1_w =        68.7    ! tight binary 1 w, argument of periapsis (deg)
+           binary1_f =       157.7    ! tight binary 1 f, initial true anomaly (deg,180=apastron)
+           binary2_a =       1.010    ! tight binary 2 semi-major axis
+           binary2_e =       0.805    ! tight binary 2 eccentricity
+           binary2_i =        66.3    ! tight binary 2 i, inclination (deg)
+           binary2_O =       342.7    ! tight binary 2 Omega, PA of ascending node (deg)
+           binary2_w =       104.5    ! tight binary 2 w, argument of periapsis (deg)
+           binary2_f =      -166.6    ! tight binary 2 f, initial true anomaly (deg,180=apastron)
+              accr1a =       0.100    ! single star accretion radius
+              accr1b =       0.100    ! single star accretion radius
+              accr2a =       0.100    ! tight binary primary accretion radius
+              accr2b =       0.100    ! tight binary secondary accretion radius
+
+# options for multiple discs
+      use_binarydisc =           T    ! setup circumbinary disc
+      use_global_iso =           F    ! globally isothermal or Farris et al. (2014)
+
+# options for circumbinary gas disc
+       isetgasbinary =           0    ! how to set gas density profile (0=total disc mass,1=mass within annulus,2=surface density normalisation,3=surface density at reference radius,4=minimum Toomre Q)
+     itapergasbinary =           F    ! exponentially taper the outer disc profile
+    ismoothgasbinary =           F    ! smooth inner disc
+         iwarpbinary =           F    ! warp disc
+          R_inbinary =       2.500    ! inner radius
+         R_refbinary =       2.500    ! reference radius
+         R_outbinary =       4.600    ! outer radius
+        disc_mbinary =   8.410E-07    ! disc mass
+        pindexbinary =       1.000    ! p index
+        qindexbinary =       0.250    ! q index
+       posanglbinary =        15.6    ! position angle (deg)
+          inclbinary =         26.    ! inclination (deg)
+           H_Rbinary =       0.050    ! H/R at R=R_ref
+             alphaSS =       0.005    ! desired alphaSS
+
+# set planets
+          setplanets =           0    ! add planets? (0=no,1=yes)
+
+# timestepping
+             norbits =         100    ! maximum number of binary orbits
+              deltat =       0.100    ! output interval as fraction of orbital period
