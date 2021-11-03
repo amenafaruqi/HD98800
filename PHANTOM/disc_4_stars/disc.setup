@@ -1,7 +1,7 @@
 # input file for disc setup routine
 
 # resolution
-                  np =      100000    ! number of gas particles
+                  np =     1000000    ! number of gas particles
 
 # units
            dist_unit =          au    ! distance unit (e.g. au,pc,kpc,0.1pc)
