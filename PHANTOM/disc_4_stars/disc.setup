@@ -12,29 +12,29 @@
               nsinks =           4    ! number of sinks
 
 # options for hierarchical quadruple
-                  m1 =       1.100    ! first hierarchical level primary mass
+                  m1 =       1.220    ! first hierarchical level primary mass
                   m2 =       1.400    ! first hierarchical level secondary mass
                   q1 =       0.311    ! tight binary 1 mass ratio
                   q2 =       0.805    ! tight binary 2 mass ratio
-              subst1 =          11    ! first star to substitute
-              subst2 =          12    ! second star to substitute
+              subst1 =         -11    ! first star to substitute
+              subst2 =         -12    ! second star to substitute
             binary_a =         51.    ! wide binary semi-major axis
             binary_e =       0.460    ! wide binary eccentricity
             binary_i =        88.1    ! wide binary i, inclination (deg)
             binary_O =       184.5    ! wide binary Omega, PA of ascending node (deg)
-            binary_w =         65.    ! wide binary w, argument of periapsis (deg)
+            binary_w =       -115.    ! wide binary w, argument of periapsis (deg)
             binary_f =       0.000    ! wide binary f, initial true anomaly (deg,180=apastron)
            binary1_a =       0.860    ! tight binary 1 semi-major axis
            binary1_e =      0.4808    ! tight binary 1 eccentricity
            binary1_i =       135.6    ! tight binary 1 i, inclination (deg)
            binary1_O =       170.2    ! tight binary 1 Omega, PA of ascending node (deg)
-           binary1_w =        68.7    ! tight binary 1 w, argument of periapsis (deg)
+           binary1_w =      -111.3    ! tight binary 1 w, argument of periapsis (deg)
            binary1_f =       157.7    ! tight binary 1 f, initial true anomaly (deg,180=apastron)
            binary2_a =       1.010    ! tight binary 2 semi-major axis
            binary2_e =       0.805    ! tight binary 2 eccentricity
            binary2_i =        66.3    ! tight binary 2 i, inclination (deg)
            binary2_O =       342.7    ! tight binary 2 Omega, PA of ascending node (deg)
-           binary2_w =       104.5    ! tight binary 2 w, argument of periapsis (deg)
+           binary2_w =       -75.5    ! tight binary 2 w, argument of periapsis (deg)
            binary2_f =      -166.6    ! tight binary 2 f, initial true anomaly (deg,180=apastron)
               accr1a =       0.100    ! single star accretion radius
               accr1b =       0.100    ! single star accretion radius
